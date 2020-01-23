@@ -22,6 +22,7 @@ class BlogIndex extends React.Component {
       <Layout location={location}>
         <Helmet title={siteTitle} />
         <Bio settings={author} />
+        <h2>MANUAL UPDATE!</h2>
         {posts.map(({ node }) => {
           const title = get(node, 'title') || node.slug
           return (
